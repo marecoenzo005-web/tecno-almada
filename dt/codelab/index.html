@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#060812">
+  <meta name="description" content="NovaTech: plan de negocio tecnológico paso a paso, lo más importante y una calculadora de ingresos. Acceso demo con cualquier usuario y contraseña.">
+  <title>NovaTech · Acceso al plan de negocio</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%233ce8c5'/%3E%3Cpath d='M10 23V9l12 14V9' fill='none' stroke='%2304120f' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Fondo decorativo -->
+  <div class="bg" aria-hidden="true">
+    <div class="orb orb--mint"></div>
+    <div class="orb orb--violet"></div>
+    <div class="orb orb--pink"></div>
+    <div class="grid-lines"></div>
+  </div>
+
+  <!-- ================= LOGIN ================= -->
+  <div id="loginView" class="login-view">
+    <div class="login-shell" id="loginShell">
+
+      <aside class="login-pitch">
+        <a class="brand" href="#" aria-label="NovaTech Studio">
+          <span class="logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M6 18V6l12 12V6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="brand__text">NovaTech <span class="brand__sub">Studio</span></span>
+        </a>
+
+        <div class="pitch-copy">
+          <span class="pill pill--mint">Plan de negocio · 2026</span>
+          <h1>De una idea tech a un negocio que <span class="grad-text">factura</span>.</h1>
+          <p class="pitch-lead">Vende desarrollo web y automatizaciones a pequeñas empresas con un modelo simple: paquetes cerrados, entregas rápidas e ingresos recurrentes.</p>
+        </div>
+
+        <ul class="pitch-list">
+          <li>
+            <span class="tick" aria-hidden="true">✓</span>
+            <div><strong>7 pasos claros</strong><span>De la validación al primer cliente que paga.</span></div>
+          </li>
+          <li>
+            <span class="tick" aria-hidden="true">✓</span>
+            <div><strong>Números reales</strong><span>Precios, margen y punto de equilibrio.</span></div>
+          </li>
+          <li>
+            <span class="tick" aria-hidden="true">✓</span>
+            <div><strong>Checklist accionable</strong><span>Tu progreso se guarda en este navegador.</span></div>
+          </li>
+        </ul>
+
+        <div class="pitch-metric">
+          <div>
+            <span>Objetivo mes 12</span>
+            <strong>$4.800 <small>MRR</small></strong>
+          </div>
+          <div class="pitch-metric__divider" aria-hidden="true"></div>
+          <div>
+            <span>Margen bruto</span>
+            <strong>65%</strong>
+          </div>
+        </div>
+      </aside>
+
+      <section class="login-panel" aria-labelledby="loginTitle">
+        <div class="login-head">
+          <span class="pill pill--demo">Acceso demo · abierto</span>
+          <h2 id="loginTitle">Entra al panel</h2>
+          <p>Usa cualquier usuario y cualquier contraseña. No hay registro ni datos reales.</p>
+        </div>
+
+        <form id="loginForm" novalidate>
+          <label for="user">Usuario</label>
+          <div class="field">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <circle cx="12" cy="8" r="3.6"/>
+              <path d="M4.5 20a7.5 7.5 0 0 1 15 0" stroke-linecap="round"/>
+            </svg>
+            <input id="user" name="user" type="text" autocomplete="username" placeholder="tu.usuario" spellcheck="false">
+          </div>
+
+          <label for="pass">Contraseña</label>
+          <div class="field">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <rect x="4.5" y="10.5" width="15" height="10" rx="2.5"/>
+              <path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5" stroke-linecap="round"/>
+            </svg>
+            <input id="pass" name="password" type="password" autocomplete="current-password" placeholder="••••••••">
+            <button type="button" id="togglePass" class="eye" aria-label="Mostrar contraseña" aria-pressed="false">
+              <svg class="eye-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z"/>
+                <circle cx="12" cy="12" r="3"/>
+              </svg>
+              <svg class="eye-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <path d="M3 3l18 18"/>
+                <path d="M10.6 6.1A9.7 9.7 0 0 1 12 6c6 0 9.5 6 9.5 6a17 17 0 0 1-3 3.6"/>
+                <path d="M6.3 6.3A17 17 0 0 0 2.5 12S6 18 12 18a9.6 9.6 0 0 0 4.1-.9"/>
+                <path d="M9.9 9.9a3 3 0 0 0 4.2 4.2"/>
+              </svg>
+            </button>
+          </div>
+
+          <div class="login-row">
+            <label class="check">
+              <input type="checkbox" id="remember" checked>
+              Mantener sesión iniciada
+            </label>
+            <span class="mini">Cualquier clave sirve</span>
+          </div>
+
+          <p class="form-error" id="loginError" role="alert" hidden></p>
+
+          <button class="btn btn--primary btn--block" type="submit" id="loginBtn">
+            <span class="btn-label">Entrar al panel</span>
+            <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M4 12h15M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </form>
+
+        <div class="hint">
+          <strong>Modo demo:</strong> cualquier usuario y contraseña funcionan. Solo no los dejes en blanco.
+        </div>
+
+        <p class="login-foot">NovaTech Studio · demo front-end sin backend</p>
+      </section>
+    </div>
+  </div>
+
+  <!-- ================= APP ================= -->
+  <div id="appView" class="app" hidden>
+    <header class="topbar">
+      <div class="topbar__inner">
+        <a class="brand brand--sm" href="#inicio" aria-label="NovaTech Studio, ir al inicio">
+          <span class="logo-mark logo-mark--sm" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M6 18V6l12 12V6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="brand__text">NovaTech <span class="brand__sub">Studio</span></span>
+        </a>
+
+        <nav class="nav" aria-label="Secciones del plan">
+          <a href="#inicio">Resumen</a>
+          <a href="#plan">Paso a paso</a>
+          <a href="#clave">Clave</a>
+          <a href="#numeros">Números</a>
+          <a href="#checklist">Checklist</a>
+          <a href="#premium" class="nav__premium">Premium <span class="nav__badge">PRO</span></a>
+        </nav>
+
+        <div class="user">
+          <span class="avatar" id="avatar" aria-hidden="true">N</span>
+          <span class="user__name" id="userName">demo</span>
+          <button type="button" class="btn btn--ghost btn--sm" id="logoutBtn">Salir</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero" id="inicio">
+        <div class="hero-copy">
+          <span class="pill pill--mint">Plan de negocio tecnológico · 2026</span>
+          <h1>Vende automatización con IA y webs que <span class="grad-text">sí resuelven</span> problemas.</h1>
+          <p class="lead">Un modelo simple y rentable: paquetes cerrados para pymes, entregas rápidas y ingresos recurrentes. Aquí tienes el paso a paso, lo crítico y los números en un solo panel.</p>
+
+          <div class="hero-actions">
+            <a class="btn btn--primary" href="#plan">
+              Ver los 7 pasos
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M12 5v14M6 13l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a class="btn btn--premium" href="#premium">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="5" y="10" width="14" height="10" rx="2.5"/>
+                <path d="M8.5 10V7.5a3.5 3.5 0 0 1 7 0V10" stroke-linecap="round"/>
+              </svg>
+              Premium
+            </a>
+            <a class="btn btn--ghost" href="#numeros">Calcular mis ingresos</a>
+          </div>
+
+          <p class="meta-line">
+            <span>Actualizado: oct 2026</span>
+            <span aria-hidden="true">·</span>
+            <span>Lectura: 8 min</span>
+            <span aria-hidden="true">·</span>
+            <span>Nivel: desde cero</span>
+            <span aria-hidden="true">·</span>
+            <button type="button" class="meta-link" id="printBtn">Imprimir / PDF</button>
+          </p>
+        </div>
+
+        <aside class="hero-card" aria-label="Resumen visual del negocio">
+          <div class="card-head">
+            <span>Radar del negocio</span>
+            <span class="live"><span class="live__dot" aria-hidden="true"></span> En vivo</span>
+          </div>
+
+          <div class="mini-kpis">
+            <div class="mini-kpi"><span>MRR actual</span><strong>$2.340</strong></div>
+            <div class="mini-kpi"><span>Objetivo mes 12</span><strong>$4.800</strong></div>
+            <div class="mini-kpi"><span>Punto de equilibrio</span><strong>3 clientes</strong></div>
+          </div>
+
+          <div class="chart" aria-hidden="true">
+            <div class="bar" style="--h:32%"></div>
+            <div class="bar" style="--h:44%"></div>
+            <div class="bar" style="--h:39%"></div>
+            <div class="bar" style="--h:58%"></div>
+            <div class="bar" style="--h:66%"></div>
+            <div class="bar" style="--h:62%"></div>
+            <div class="bar" style="--h:84%"></div>
+            <div class="bar" style="--h:100%"></div>
+          </div>
+          <div class="months" aria-hidden="true">
+            <span>M1</span><span>M2</span><span>M3</span><span>M4</span><span>M5</span><span>M6</span><span>M7</span><span>M8</span>
+          </div>
+
+          <div class="float-chip">
+            <span class="float-chip__icon" aria-hidden="true">↗</span>
+            <span><strong>MRR proyectado</strong> creciendo mes a mes</span>
+          </div>
+        </aside>
+      </section>
+
+      <!-- STATS -->
+      <section class="stats" aria-label="Cifras clave del plan">
+        <div class="stats-grid">
+          <div class="stat">
+            <strong data-count="7">7</strong>
+            <span>pasos del plan, sin relleno</span>
+          </div>
+          <div class="stat">
+            <strong data-count="3">3</strong>
+            <span>clientes/mes para cubrir costes</span>
+          </div>
+          <div class="stat">
+            <strong data-count="65" data-suffix="%">65%</strong>
+            <span>margen bruto objetivo</span>
+          </div>
+          <div class="stat">
+            <strong data-count="4800" data-prefix="$">$4.800</strong>
+            <span>MRR objetivo al mes 12</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- PLAN -->
+      <section class="section" id="plan">
+        <div class="section-head">
+          <span class="pill pill--soft">Hoja de ruta</span>
+          <h2>El paso a paso, en orden</h2>
+          <p>Abre cada paso para ver las acciones concretas, el tiempo estimado, el coste y el entregable. No avances sin cerrar el entregable anterior.</p>
+        </div>
+
+        <div class="steps">
+          <details class="step" open>
+            <summary>
+              <span class="step__num">01</span>
+              <span class="step__title-wrap">
+                <span class="step__title">Valida el problema antes de escribir código</span>
+                <span class="step__meta">
+                  <span class="chip">Semana 1</span>
+                  <span class="chip">Coste: $0</span>
+                  <span class="chip chip--hot">Prioridad crítica</span>
+                </span>
+              </span>
+              <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </summary>
+            <div class="step__body">
+              <ul>
+                <li>Elige un <strong>nicho concreto</strong>: clínicas, talleres, inmobiliarias, restaurantes. «Pymes» no es un nicho.</li>
+                <li>Habla con 10 dueños y pregunta cuánto les cuesta el problema: horas perdidas, citas que no se contestan, clientes que se van.</li>
+                <li>Busca la señal de compra: ya pagan por una solución imperfecta (agencia, freelance, Excel, WhatsApp manual).</li>
+                <li>Si nadie paga hoy por resolverlo, cambia de nicho. No de idea.</li>
+              </ul>
+              <p class="deliver"><strong>Entregable:</strong> una página con el problema, el cliente ideal y 3 pruebas de que ya gastan dinero en resolverlo.</p>
+            </div>
+          </details>
+
+          <details class="step">
+            <summary>
+              <span class="step__num">02</span>
+              <span class="step__title-wrap">
+                <span class="step__title">Diseña una oferta cerrada y fácil de comprar</span>
+                <span class="step__meta">
+                  <span class="chip">Semana 2</span>
+                  <span class="chip">Coste: $0</span>
+                  <span class="chip chip--hot">Prioridad crítica</span>
+                </span>
+              </span>
+              <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </summary>
+            <div class="step__body">
+              <ul>
+                <li>Empaqueta 3 servicios: <strong>web express</strong>, <strong>automatización</strong> de citas/seguimiento y <strong>mantenimiento mensual</strong>.</li>
+                <li>Precio fijo por resultado, no por hora. El cliente compra certeza, no tu tiempo.</li>
+                <li>Alcance escrito: qué incluye, qué no, cuántas revisiones y en cuántos días se entrega.</li>
+                <li>Añade una garantía simple (14 días de ajustes) para reducir el riesgo percibido.</li>
+              </ul>
+              <p class="deliver"><strong>Entregable:</strong> PDF de una página con paquetes, precios, plazos y condiciones.</p>
+            </div>
+          </details>
+
+          <details class="step">
+            <summary>
+              <span class="step__num">03</span>
+              <span class="step__title-wrap">
+                <span class="step__title">Formaliza lo mínimo y protégete</span>
+                <span class="step__meta">
+                  <span class="chip">Semana 2-3</span>
+                  <span class="chip">Coste: $100-400</span>
+                  <span class="chip">Prioridad alta</span>
+                </span>
+              </span>
+              <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </summary>
+            <div class="step__body">
+              <ul>
+                <li>Alta fiscal como autónomo o empresa, cuenta bancaria separada y facturación en regla.</li>
+                <li>Contrato de servicio con alcance, pagos <strong>50% al inicio / 50% a la entrega</strong>, propiedad del código y límite de revisiones.</li>
+                <li>Política de privacidad y tratamiento de datos si tocas datos de clientes (RGPD / LFPDPPP).</li>
+                <li>Guarda todos los acuerdos por escrito, incluso los cambios pequeños.</li>
+              </ul>
+              <p class="deliver"><strong>Entregable:</strong> plantilla de contrato + datos de facturación + política de privacidad publicada.</p>
+            </div>
+          </details>
+
+          <details class="step">
+            <summary>
+              <span class="step__num">04</span>
+              <span class="step__title-wrap">
+                <span class="step__title">Construye tu MVP comercial</span>
+                <span class="step__meta">
+                  <span class="chip">Semana 3-5</span>
+                  <span class="chip">Coste: $0-200</span>
+                  <span class="chip">Prioridad alta</span>
+                </span>
+              </span>
+              <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </summary>
+            <div class="step__body">
+              <ul>
+                <li>Web de una sola página: problema, solución, 2 demos o casos, precio y botón de agenda.</li>
+                <li>Reutiliza plantillas y automatizaciones propias. No construyas 6 meses antes de vender.</li>
+                <li>Graba una demo de 3 minutos mostrando el <strong>antes y después</strong> con una métrica.</li>
+                <li>Ten un enlace de agenda y una forma de pago funcionando desde el día uno.</li>
+              </ul>
+              <p class="deliver"><strong>Entregable:</strong> web publicada + demo grabada + enlace de agenda + forma de cobro.</p>
+            </div>
+          </details>
+
+          <details class="step">
+            <summary>
+              <span class="step__num">05</span>
+              <span class="step__title-wrap">
+                <span class="step__title">Consigue los 3 primeros clientes</span>
+                <span class="step__meta">
+                  <span class="chip">Semana 4-8</span>
+                  <span class="chip">Coste: $0-300</span>
+                  <span class="chip chip--hot">Prioridad crítica</span>
+                </span>
+              </span>
+              <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </summary>
+            <div class="step__body">
+              <ul>
+                <li>Outbound diario: <strong>10 mensajes personalizados</strong> a negocios del nicho, con una mejora concreta que hayas detectado.</li>
+                <li>Alianzas con quien ya atiende a tu cliente ideal: gestores, contables, diseñadores, agencias pequeñas.</li>
+                <li>Precio de lanzamiento a cambio de testimonio y caso de estudio. Aun así, <strong>cobra</strong>.</li>
+                <li>Mide: contactos → respuestas → llamadas → propuestas → cierres. Optimiza el eslabón más débil.</li>
+              </ul>
+              <p class="deliver"><strong>Entregable:</strong> 3 contratos firmados, 3 testimonios y un caso con números reales.</p>
+            </div>
+          </details>
+
+          <details class="step">
+            <summary>
+              <span class="step__num">06</span>
+              <span class="step__title-wrap">
+                <span class="step__title">Entrega como una máquina, no como un héroe</span>
+                <span class="step__meta">
+                  <span class="chip">Desde el mes 2</span>
+                  <span class="chip">Coste: $0</span>
+                  <span class="chip">Prioridad alta</span>
+                </span>
+              </span>
+              <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </summary>
+            <div class="step__body">
+              <ul>
+                <li>Onboarding estandarizado: formulario, checklist de accesos, fechas y responsable de cada cosa.</li>
+                <li>Documenta procesos (SOPs) y guarda plantillas reutilizables de web, automatización y reportes.</li>
+                <li>Registra las horas reales por proyecto. Si un paquete pierde dinero, sube el precio o reduce el alcance.</li>
+                <li>Pide reseña y referido al terminar cada entrega. Es el canal más barato que existe.</li>
+              </ul>
+              <p class="deliver"><strong>Entregable:</strong> manual de entrega + plantillas + registro de horas y rentabilidad por servicio.</p>
+            </div>
+          </details>
+
+          <details class="step">
+            <summary>
+              <span class="step__num">07</span>
+              <span class="step__title-wrap">
+                <span class="step__title">Escala con recurrencia y producto</span>
+                <span class="step__meta">
+                  <span class="chip">Mes 4 en adelante</span>
+                  <span class="chip">Coste: variable</span>
+                  <span class="chip">Crecimiento</span>
+                </span>
+              </span>
+              <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </summary>
+            <div class="step__body">
+              <ul>
+                <li>Convierte cada entrega en un plan mensual: hosting, soporte, mejoras y reportes (por ejemplo $390/mes).</li>
+                <li>Productiza lo que repites: mismo nicho, mismo stack, misma automatización empaquetada.</li>
+                <li>Subcontrata lo repetitivo (contenido, QA, soporte nivel 1) y quédate con ventas y arquitectura.</li>
+                <li>Sube precios a los nuevos clientes cada 3-6 meses. La primera versión siempre es barata.</li>
+              </ul>
+              <p class="deliver"><strong>Entregable:</strong> 10 clientes en recurrencia y un proceso comercial replicable.</p>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <!-- CLAVE -->
+      <section class="section" id="clave">
+        <div class="section-head">
+          <span class="pill pill--soft">Lo que decide el resultado</span>
+          <h2>Lo más importante, en 6 reglas</h2>
+          <p>Si solo puedes recordar una cosa de este plan, recuerda estas seis. Todo lo demás son detalles que se resuelven sobre la marcha.</p>
+        </div>
+
+        <div class="important-grid">
+          <article class="important-card">
+            <span class="icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="8.5"/>
+                <circle cx="12" cy="12" r="4.5"/>
+                <circle cx="12" cy="12" r="1" fill="currentColor"/>
+              </svg>
+            </span>
+            <h3>Nicho antes que producto</h3>
+            <p>Un nicho concreto te da mensaje, referidos y precios. La tecnología es el medio; el negocio es resolver un problema caro para alguien específico.</p>
+          </article>
+
+          <article class="important-card">
+            <span class="icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M20.5 13.5l-7 7L4 11V4h7l9.5 9.5Z" stroke-linejoin="round"/>
+                <circle cx="8.5" cy="8.5" r="1.4" fill="currentColor"/>
+              </svg>
+            </span>
+            <h3>Cobra por valor, no por horas</h3>
+            <p>El cliente paga por horas ahorradas o ventas recuperadas. Sube el precio antes de subir la complejidad: vender barato no valida nada.</p>
+          </article>
+
+          <article class="important-card">
+            <span class="icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M4 8.5h13a3 3 0 0 1 3 3v2a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3v-5Z" stroke-linejoin="round"/>
+                <path d="M17.5 8.5V7a3 3 0 0 0-3-3H6" stroke-linecap="round"/>
+                <path d="M15 3.5l2.5 2.5L15 8.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <h3>Recurrencia o muerte lenta</h3>
+            <p>Los proyectos sueltos te obligan a vender cada mes desde cero. El mantenimiento mensual estabiliza la caja y permite planificar.</p>
+          </article>
+
+          <article class="important-card">
+            <span class="icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M4 19.5V13M9.3 19.5V9M14.7 19.5v-4M20 19.5V5" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <h3>Un embudo simple y medido</h3>
+            <p>10 contactos/día → 2 llamadas → 1 propuesta → 0,3 cierres. Mide cada eslabón y arregla el que más se rompe, no el que más te gusta.</p>
+          </article>
+
+          <article class="important-card">
+            <span class="icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M12 3.5l7.5 3v5.2c0 4.3-3.1 7.7-7.5 8.8-4.4-1.1-7.5-4.5-7.5-8.8V6.5l7.5-3Z" stroke-linejoin="round"/>
+                <path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <h3>Caja primero</h3>
+            <p>Cobra 50% al inicio y ten 3 meses de gastos de reserva. El flujo de caja mata más negocios que la falta de clientes.</p>
+          </article>
+
+          <article class="important-card">
+            <span class="icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="3.2"/>
+                <path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <h3>Máquina, no héroe</h3>
+            <p>Si todo depende de ti, no tienes un negocio: tienes un empleo. Procesos, plantillas y documentación desde el primer cliente.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- NÚMEROS -->
+      <section class="section" id="numeros">
+        <div class="section-head">
+          <span class="pill pill--soft">Modelo financiero</span>
+          <h2>Los números que importan</h2>
+          <p>Ajusta los supuestos y mira el potencial. Es una estimación simple: no incluye impuestos ni todos los costes fijos.</p>
+        </div>
+
+        <div class="calc">
+          <div class="calc-panel">
+            <div class="control">
+              <div class="control__top">
+                <label for="calcClients">Clientes nuevos al mes</label>
+                <span class="control__val" id="clientsVal">2</span>
+              </div>
+              <input type="range" id="calcClients" min="1" max="10" step="1" value="2">
+              <p class="control__hint">Proyectos cerrados por mes, no propuestas enviadas.</p>
+            </div>
+
+            <div class="control">
+              <div class="control__top">
+                <label for="calcTicket">Ticket promedio por proyecto</label>
+                <span class="control__val" id="ticketVal">$900</span>
+              </div>
+              <input type="range" id="calcTicket" min="300" max="3000" step="100" value="900">
+              <p class="control__hint">Web express + una automatización sencilla.</p>
+            </div>
+
+            <div class="control">
+              <div class="control__top">
+                <label for="calcRetainers">Clientes en plan mensual</label>
+                <span class="control__val" id="retainersVal">6</span>
+              </div>
+              <input type="range" id="calcRetainers" min="0" max="30" step="1" value="6">
+              <p class="control__hint">Soporte, hosting y mejoras a $390/mes cada uno.</p>
+            </div>
+
+            <p class="calc-note">
+              <strong>Supuestos:</strong> retainer de $390/mes · margen bruto 65% · costes fijos ≈ $350/mes (herramientas, gestoría, publicidad). Cambia los valores para ver tu escenario.
+            </p>
+          </div>
+
+          <div class="calc-results">
+            <div class="res">
+              <span>Ingresos por proyectos</span>
+              <strong id="outProjects">$1.800</strong>
+            </div>
+            <div class="res">
+              <span>Ingresos recurrentes</span>
+              <strong id="outMrr">$2.340</strong>
+            </div>
+            <div class="res res--wide">
+              <span>Total estimado al mes</span>
+              <strong id="outTotal">$4.140</strong>
+            </div>
+            <div class="res">
+              <span>Beneficio estimado / mes</span>
+              <strong id="outProfit">$2.691</strong>
+            </div>
+            <div class="res">
+              <span>Año 1 a ritmo constante</span>
+              <strong id="outYear">$49.680</strong>
+            </div>
+            <p class="calc-foot">Con 3 clientes de $900/mes ya cubres los costes fijos. Todo lo demás es margen o inversión.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CHECKLIST -->
+      <section class="section" id="checklist">
+        <div class="section-head">
+          <span class="pill pill--soft">Acción</span>
+          <h2>Checklist de lanzamiento</h2>
+          <p>Marca lo que ya tienes hecho. El progreso se guarda automáticamente en este navegador.</p>
+        </div>
+
+        <div class="check-card">
+          <div class="check-head">
+            <div>
+              <strong class="check-title">Tu progreso</strong>
+              <p class="check-sub" id="checkLabel">0 de 12 completados</p>
+            </div>
+            <span class="check-pct" id="checkPct">0%</span>
+          </div>
+          <div class="progress" role="progressbar" aria-labelledby="checkLabel" aria-valuemin="0" aria-valuemax="12" aria-valuenow="0" id="checkProgress">
+            <div class="progress__bar" id="checkBar"></div>
+          </div>
+
+          <ul class="check-list" id="checkList"></ul>
+
+          <div class="check-actions">
+            <span class="mini">Se guarda solo. Sin cuentas, sin servidores.</span>
+            <button type="button" class="btn btn--ghost btn--sm" id="resetChecklist">Reiniciar checklist</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- PREMIUM -->
+      <section class="section premium" id="premium">
+        <!-- Estado bloqueado -->
+        <div id="premiumLocked">
+          <div class="section-head premium-head">
+            <span class="pill pill--premium">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4 6.8 19.1l1-5.8L3.5 9.2l5.9-.9L12 3Z" stroke-linejoin="round"/>
+              </svg>
+              Premium · contenido extra
+            </span>
+            <h2>Lo mejor y lo más novedoso, <span class="gold-text">detrás de tu correo</span>.</h2>
+            <p>Ocho jugadas de 2026, un plan de 90 días, precios para vender esta semana y los KPIs que miran los que ganan. Escribe tu correo y se desbloquea al instante.</p>
+          </div>
+
+          <div class="premium-panel">
+            <div class="premium-panel__copy">
+              <span class="premium-kicker">Lo que hay dentro</span>
+              <ul class="premium-perks">
+                <li>
+                  <span class="perk-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                      <path d="M4 19.5V13M9.3 19.5V9M14.7 19.5v-4M20 19.5V5" stroke-linecap="round"/>
+                    </svg>
+                  </span>
+                  <div>
+                    <strong>8 jugadas de negocio 2026</strong>
+                    <span>Agentes verticales, precio por resultado, micro-SaaS y más.</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="perk-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                      <path d="M4 6.5h16M4 12h16M4 17.5h10" stroke-linecap="round"/>
+                    </svg>
+                  </span>
+                  <div>
+                    <strong>Plan de 90 días</strong>
+                    <span>De la auditoría al primer retainer, con entregables claros.</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="perk-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                      <path d="M12 3.5l7.5 3v5.2c0 4.3-3.1 7.7-7.5 8.8-4.4-1.1-7.5-4.5-7.5-8.8V6.5l7.5-3Z" stroke-linejoin="round"/>
+                      <path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                  <div>
+                    <strong>Precios y KPIs reales</strong>
+                    <span>Ofertas con ticket, márgenes y los números que vigilar.</span>
+                  </div>
+                </li>
+              </ul>
+
+              <blockquote class="premium-quote">
+                «La ventaja no es tener IA. Es <strong>empaquetar un resultado</strong> que el cliente pueda medir y volver a comprar.»
+              </blockquote>
+            </div>
+
+            <div class="premium-form-card">
+              <span class="premium-form__tag">Acceso inmediato · gratis</span>
+              <h3>Desbloquea Premium</h3>
+              <p class="premium-form__lead">Sin tarjeta. Sin spam. Solo tu correo para guardar el acceso en este navegador.</p>
+
+              <form id="premiumForm" novalidate>
+                <label for="premiumEmail">Correo electrónico</label>
+                <div class="field">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                    <rect x="3.5" y="5.5" width="17" height="13" rx="2.5"/>
+                    <path d="M4 7l8 6 8-6" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <input id="premiumEmail" name="email" type="email" inputmode="email" autocomplete="email" placeholder="tu@empresa.com" maxlength="120" spellcheck="false">
+                </div>
+                <p class="form-error" id="premiumError" role="alert" hidden></p>
+
+                <button class="btn btn--premium btn--block" type="submit" id="premiumBtn">
+                  <span class="btn-label">Desbloquear Premium</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M4 12h15M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </form>
+
+              <p class="premium-privacy">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <rect x="4.5" y="10.5" width="15" height="10" rx="2.5"/>
+                  <path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5" stroke-linecap="round"/>
+                </svg>
+                <span>Demo: el correo se guarda solo en <code>localStorage</code> de este navegador. No se envía a ningún servidor.</span>
+              </p>
+
+              <div class="premium-proof">
+                <div><strong>8</strong><span>jugadas</span></div>
+                <div><strong>90</strong><span>días</span></div>
+                <div><strong>6</strong><span>KPIs</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Estado desbloqueado -->
+        <div class="premium-unlocked" id="premiumUnlocked" hidden>
+          <div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+
+          <div class="section-head premium-head">
+            <span class="pill pill--premium">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M5 12.5l4.2 4.2L19 7" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Premium activo
+            </span>
+            <h2 id="premiumTitle" tabindex="-1">Las jugadas que van <span class="gold-text">un paso por delante</span>.</h2>
+            <p>Acceso desbloqueado para <strong id="premiumEmailOut">tu correo</strong>. Elige una jugada, valida con 3 clientes y mide antes de escalar.</p>
+            <div class="premium-toolbar">
+              <button type="button" class="btn btn--ghost btn--sm" id="changeEmailBtn">Usar otro correo</button>
+              <button type="button" class="btn btn--ghost btn--sm" id="printPremiumBtn">Imprimir plan</button>
+              <span class="premium-local">Desbloqueado en este navegador</span>
+            </div>
+          </div>
+
+          <div class="premium-grid">
+            <article class="premium-card">
+              <div class="premium-card__top"><span class="premium-card__num">01</span><span class="chip">Recurrencia</span></div>
+              <h3>Empleado digital, no chatbot</h3>
+              <p>Agentes con memoria y herramientas —agenda, CRM, WhatsApp— que hacen el trabajo. Vendes un puesto por $600–1.200/mes; el cliente lo compara con un salario.</p>
+              <span class="premium-card__tag">La oferta que más crece</span>
+            </article>
+
+            <article class="premium-card">
+              <div class="premium-card__top"><span class="premium-card__num">02</span><span class="chip">Moat</span></div>
+              <h3>Precio por resultado</h3>
+              <p>Cobra por cita recuperada, hora ahorrada o venta cerrada. Mide 14 días de línea base y firma cómo se calcula. Es el foso que nadie copia rápido.</p>
+              <span class="premium-card__tag">Difícil de copiar</span>
+            </article>
+
+            <article class="premium-card">
+              <div class="premium-card__top"><span class="premium-card__num">03</span><span class="chip">Escalable</span></div>
+              <h3>Micro-SaaS vertical</h3>
+              <p>Convierte lo que repites en una herramienta para un solo nicho. El servicio valida y paga el producto; empieza con 5 clientes idénticos y automatiza el 80%.</p>
+              <span class="premium-card__tag">De horas a activo</span>
+            </article>
+
+            <article class="premium-card">
+              <div class="premium-card__top"><span class="premium-card__num">04</span><span class="chip">Autoridad</span></div>
+              <h3>Benchmark del nicho</h3>
+              <p>Publica cada mes datos reales de tu sector: tiempo de respuesta, citas perdidas y conversión. Tu informe se vuelve marketing, lead magnet y producto de datos.</p>
+              <span class="premium-card__tag">Datos como ventaja</span>
+            </article>
+
+            <article class="premium-card">
+              <div class="premium-card__top"><span class="premium-card__num">05</span><span class="chip">2026</span></div>
+              <h3>Voz y WhatsApp first</h3>
+              <p>En español gana quien contesta primero. Agentes que responden en menos de 30 segundos, agendan y recuperan conversaciones fuera de horario.</p>
+              <span class="premium-card__tag">Cero leads perdidos</span>
+            </article>
+
+            <article class="premium-card">
+              <div class="premium-card__top"><span class="premium-card__num">06</span><span class="chip">Ticket alto</span></div>
+              <h3>Automatización con garantía</h3>
+              <p>Auditoría de 3 días, implementación por fases y garantía de ahorro medible. Si no se cumple, devuelves la mitad: sube el ticket y elimina la objeción principal.</p>
+              <span class="premium-card__tag">Cobra sin miedo</span>
+            </article>
+
+            <article class="premium-card">
+              <div class="premium-card__top"><span class="premium-card__num">07</span><span class="chip">Apalancamiento</span></div>
+              <h3>Licencia tu método</h3>
+              <p>Documenta y certifica tu sistema de entrega. Cobra licencia, formación y un directorio de implementadores: ingresos que no dependen de tus horas.</p>
+              <span class="premium-card__tag">Crece sin ti</span>
+            </article>
+
+            <article class="premium-card">
+              <div class="premium-card__top"><span class="premium-card__num">08</span><span class="chip">Upsell</span></div>
+              <h3>CFO de automatización</h3>
+              <p>Diagnóstico financiero de procesos: dónde se pierde dinero y qué automatizar primero. Ticket de $2.000–6.000 y entrada natural al retainer mensual.</p>
+              <span class="premium-card__tag">Entrada de alto valor</span>
+            </article>
+          </div>
+
+          <div class="premium-block">
+            <div class="premium-block__head">
+              <span class="pill pill--soft">90 días</span>
+              <h3>Tu plan de lanzamiento</h3>
+              <p>Una sola jugada, ejecutada con disciplina. No lances las ocho a la vez.</p>
+            </div>
+            <ol class="premium-roadmap">
+              <li>
+                <span class="day">Días 1–15</span>
+                <strong>Elige y mide</strong>
+                <p>10 auditorías exprés en un solo vertical. Línea base de tiempos, citas perdidas y conversión. Una promesa medible.</p>
+              </li>
+              <li>
+                <span class="day">Días 16–45</span>
+                <strong>Piloto con 3 clientes</strong>
+                <p>Implementa el empleado digital, cobra setup y documenta el antes/después con números reales.</p>
+              </li>
+              <li>
+                <span class="day">Días 46–75</span>
+                <strong>Empaqueta y sube</strong>
+                <p>Caso de estudio, benchmark y contrato nuevo. Sube el precio un 30% para los siguientes clientes.</p>
+              </li>
+              <li>
+                <span class="day">Días 76–90</span>
+                <strong>Recurrencia</strong>
+                <p>Convierte 5 pilotos en retainers, añade un upsell y documenta el proceso para empezar a delegar.</p>
+              </li>
+            </ol>
+          </div>
+
+          <div class="premium-two-col">
+            <div class="premium-block">
+              <h3>Ofertas que puedes vender esta semana</h3>
+              <p>Precios de referencia listos para adaptar a tu mercado.</p>
+              <ul class="offer-list">
+                <li>
+                  <div><strong>Recepcionista IA 24/7</strong><small>WhatsApp + voz + agenda</small></div>
+                  <div class="offer-price">$790/mes<small>setup $1.500</small></div>
+                </li>
+                <li>
+                  <div><strong>Recuperación de citas</strong><small>Seguimiento automático</small></div>
+                  <div class="offer-price">$390/mes<small>+ $15 por cita</small></div>
+                </li>
+                <li>
+                  <div><strong>Seguimiento de presupuestos</strong><small>CRM + email + WhatsApp</small></div>
+                  <div class="offer-price">$490/mes<small>sin setup</small></div>
+                </li>
+                <li>
+                  <div><strong>Auditoría CFO de automatización</strong><small>3 días · roadmap priorizado</small></div>
+                  <div class="offer-price">$1.900<small>pago único</small></div>
+                </li>
+                <li>
+                  <div><strong>Sistema de reseñas y referidos</strong><small>Reputación local</small></div>
+                  <div class="offer-price">$290/mes<small>setup $400</small></div>
+                </li>
+                <li>
+                  <div><strong>Micro-SaaS de nicho</strong><small>Producto propio para tu vertical</small></div>
+                  <div class="offer-price">$99–299/mes<small>por cliente</small></div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="premium-block">
+              <h3>Los 6 números que vigilar</h3>
+              <p>Si mejoras estos, el resto del negocio se acomoda.</p>
+              <ul class="kpi-list">
+                <li><strong>&lt; 30 s</strong><span>Tiempo de primera respuesta</span></li>
+                <li><strong>&gt; 80%</strong><span>Leads atendidos por IA</span></li>
+                <li><strong>&gt; 30 h</strong><span>Ahorradas al mes por cliente</span></li>
+                <li><strong>&gt; $600</strong><span>MRR medio por cliente</span></li>
+                <li><strong>&lt; 3%</strong><span>Churn mensual</span></li>
+                <li><strong>&gt; 3x</strong><span>LTV / CAC</span></li>
+              </ul>
+              <p class="premium-note"><strong>Meta realista:</strong> 5 retainers de $600 son $3.000 MRR sin contar proyectos. Valida el modelo antes de escalar.</p>
+            </div>
+          </div>
+
+          <div class="premium-responsible">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path d="M12 3.5l7.5 3v5.2c0 4.3-3.1 7.7-7.5 8.8-4.4-1.1-7.5-4.5-7.5-8.8V6.5l7.5-3Z" stroke-linejoin="round"/>
+              <path d="M12 9v3.5M12 16h.01" stroke-linecap="round"/>
+            </svg>
+            <div>
+              <strong>Modo responsable</strong>
+              <p>Nada de llamadas o mensajes automáticos sin consentimiento. Anonimiza los datos que uses en benchmarks y revisa las respuestas de la IA. La confianza es lo que hace que la recurrencia dure.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>NovaTech Studio · plan de negocio demo. Hecho con HTML, CSS y JavaScript puro.</p>
+      <p class="footer__right">Sesión de <span id="footerUser">demo</span></p>
+    </footer>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
